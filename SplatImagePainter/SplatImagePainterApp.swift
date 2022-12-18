@@ -11,49 +11,36 @@ import SwiftUI
 struct SplatImagePainterApp: App {
     
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-
+    @StateObject var appState = AppState()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(appState: appState)
         }
         .commands {
             CommandGroup(replacing: .newItem) {
                 // remove New Window
             }
             CommandGroup(replacing: .help) {
-                ShowHelpItem()
+                Button (action: {
+                    NSWorkspace.shared.open(URL(string: "https://github.com/vascarpenter/SplatImagePainter")!)
+                }, label: {
+                    Text("Show Website")
+                })
             }
             CommandGroup(after: .newItem) {
-                OpenFileItem()
+                Button (action: {
+                    appState.OpenFileItem()
+                }, label: {
+                    Text("画像を開く...")
+                })
+                .keyboardShortcut("O", modifiers:  [.command])
             }
 
         }
     }
 }
 
-
-struct ShowHelpItem: View {
-    var body : some View {
-        Button (action: {
-            NSWorkspace.shared.open(URL(string: "https://github.com/vascarpenter/SplatImagePainter")!)
-        }, label: {
-            Text("Show Website")
-        })
-    }
-}
-
-struct OpenFileItem: View {
-    
-    var body : some View {
-        Button (action: {
-            // not impplemented
-        }, label: {
-            Text("画像を開く...")
-        })
-        .keyboardShortcut("O", modifiers:  [.command])
-    }
-
-}
 
 class AppDelegate: NSObject, NSApplicationDelegate/*, NSWindowDelegate*/ {
     

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		58AA9616294ED548008520CF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 58AA9615294ED548008520CF /* README.md */; };
+		58AA9618294F44E3008520CF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AA9617294F44E3008520CF /* AppState.swift */; };
 		58E8A8FC294D9487009BD2D9 /* SplatImagePainterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E8A8FB294D9487009BD2D9 /* SplatImagePainterApp.swift */; };
 		58E8A8FE294D9487009BD2D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E8A8FD294D9487009BD2D9 /* ContentView.swift */; };
 		58E8A900294D9489009BD2D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58E8A8FF294D9489009BD2D9 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		58AA9615294ED548008520CF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		58AA9617294F44E3008520CF /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		58E8A8F8294D9487009BD2D9 /* SplatImagePainter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplatImagePainter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E8A8FB294D9487009BD2D9 /* SplatImagePainterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplatImagePainterApp.swift; sourceTree = "<group>"; };
 		58E8A8FD294D9487009BD2D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				58E8A8FB294D9487009BD2D9 /* SplatImagePainterApp.swift */,
+				58AA9617294F44E3008520CF /* AppState.swift */,
 				58E8A8FD294D9487009BD2D9 /* ContentView.swift */,
 				58E8A8FF294D9489009BD2D9 /* Assets.xcassets */,
 				58E8A904294D9489009BD2D9 /* SplatImagePainter.entitlements */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58AA9618294F44E3008520CF /* AppState.swift in Sources */,
 				58E8A8FE294D9487009BD2D9 /* ContentView.swift in Sources */,
 				58E8A8FC294D9487009BD2D9 /* SplatImagePainterApp.swift in Sources */,
 			);
