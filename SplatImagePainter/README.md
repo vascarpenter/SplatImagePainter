@@ -9,4 +9,3 @@
 - Save ボタンを押して bmpdata.h を保存
 - bmpdata.h をテキストエディタで開き、Select All, Copyして Arduino IDEで開いた bmpdata.h を置き換える
 - spladraw.ino をコンパイル、転送する
-

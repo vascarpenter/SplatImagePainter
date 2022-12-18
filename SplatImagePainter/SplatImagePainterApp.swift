@@ -46,7 +46,7 @@ struct OpenFileItem: View {
     
     var body : some View {
         Button (action: {
-            
+            // not impplemented
         }, label: {
             Text("画像を開く...")
         })

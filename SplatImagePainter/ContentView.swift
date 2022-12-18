@@ -26,7 +26,7 @@ struct ContentView: View {
                 openPanel.allowsMultipleSelection = false
                 openPanel.canChooseDirectories = false
                 openPanel.canChooseFiles = true
-                openPanel.allowedFileTypes = [UTType.png.identifier, UTType.jpeg.identifier]
+                openPanel.allowedContentTypes = [UTType.png, UTType.jpeg]
                 if openPanel.runModal() == .OK {
                     guard let url = openPanel.url,
                           let newImage = CIImage(contentsOf: url)
