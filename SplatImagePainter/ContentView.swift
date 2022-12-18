@@ -114,35 +114,35 @@ struct ContentView: View {
 func get8bit(ptr: UnsafePointer<UInt8>, offset: Int) -> Int
 {
     var c=0
-    if ptr[offset]<128
+    if ptr[offset]>128
     {
         c |= 0x80
     }
-    if ptr[offset+4]<128
+    if ptr[offset+4]>128
     {
         c |= 0x40
     }
-    if ptr[offset+8]<128
+    if ptr[offset+8]>128
     {
         c |= 0x20
     }
-    if ptr[offset+12]<128
+    if ptr[offset+12]>128
     {
         c |= 0x10
     }
-    if ptr[offset+16]<128
+    if ptr[offset+16]>128
     {
         c |= 0x8
     }
-    if ptr[offset+20]<128
+    if ptr[offset+20]>128
     {
         c |= 0x4
     }
-    if ptr[offset+24]<128
+    if ptr[offset+24]>128
     {
         c |= 0x2
     }
-    if ptr[offset+28]<128
+    if ptr[offset+28]>128
     {
         c |= 0x1
     }
