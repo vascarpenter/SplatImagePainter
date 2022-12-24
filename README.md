@@ -16,3 +16,4 @@
 
 - 変更履歴
   - 0.2 menu item を使用可能とした app構造変更
+  - 0.3 https://github.com/koher/swift-image を使用したところ非常にすっきり

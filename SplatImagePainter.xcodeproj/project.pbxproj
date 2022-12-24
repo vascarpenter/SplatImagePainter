@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58947CE6295728A30017C420 /* SwiftImage in Frameworks */ = {isa = PBXBuildFile; productRef = 58947CE5295728A30017C420 /* SwiftImage */; };
 		58AA9616294ED548008520CF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 58AA9615294ED548008520CF /* README.md */; };
 		58AA9618294F44E3008520CF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AA9617294F44E3008520CF /* AppState.swift */; };
 		58E8A8FC294D9487009BD2D9 /* SplatImagePainterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E8A8FB294D9487009BD2D9 /* SplatImagePainterApp.swift */; };
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58947CE6295728A30017C420 /* SwiftImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +93,9 @@
 			dependencies = (
 			);
 			name = SplatImagePainter;
+			packageProductDependencies = (
+				58947CE5295728A30017C420 /* SwiftImage */,
+			);
 			productName = SplatImagePainter;
 			productReference = 58E8A8F8294D9487009BD2D9 /* SplatImagePainter.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +124,9 @@
 				Base,
 			);
 			mainGroup = 58E8A8EF294D9487009BD2D9;
+			packageReferences = (
+				58947CE4295728A30017C420 /* XCRemoteSwiftPackageReference "swift-image" */,
+			);
 			productRefGroup = 58E8A8F9294D9487009BD2D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -340,6 +348,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		58947CE4295728A30017C420 /* XCRemoteSwiftPackageReference "swift-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/koher/swift-image.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		58947CE5295728A30017C420 /* SwiftImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58947CE4295728A30017C420 /* XCRemoteSwiftPackageReference "swift-image" */;
+			productName = SwiftImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 58E8A8F0294D9487009BD2D9 /* Project object */;
 }
