@@ -22,6 +22,10 @@ struct ContentView: View {
                 {
                     appState.OpenFileItem()
                 }
+                Button("Open Image as dither...")
+                {
+                    appState.OpenFileWithDither()
+                }
                 
                 Button("Save As bmpdata.h")
                 {
