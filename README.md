@@ -6,7 +6,8 @@
 - Openボタンを押して320x120 の画像(JPEGなど)を開く
   - 白黒であることを確認
   - 画像の加工は他の画像編集ソフトで行ってください(手抜き） 320 x 120ピクセルで PNGあるいはJPEGで保存してしてください
-
+  - 階調のある画像を読み込む場合 Open Image as dither... を押すと、ディザリングして２値変換します
+  
 - Save ボタンを押して bmpdata.h を保存します
 - bmpdata.h をテキストエディタで開き、Select All, Copyして Arduino IDEで開いた bmpdata.h を置き換えてください
 - spladraw.ino をコンパイル、転送する
